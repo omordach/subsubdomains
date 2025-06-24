@@ -91,7 +91,7 @@ sudo nano /etc/nginx/sites-available/dev1.mordach.com
 ```nginx
 map $host $app_dir {
     default "";
-    ~^(?<branch>.+)\.dev1\.mordach\.com$ /var/www/$branch;
+    ~^(?<branch>.+)\.dev1\.mordach\.com$ /var/www/html/$branch;
 }
 
 server {
@@ -167,4 +167,5 @@ sudo crontab -e
 
 - https://uiv4-001.dev1.mordach.com
 - https://uiv4-002.dev1.mordach.com
-- https://feature-x.dev1.mordach.com
+- ...
+- https://uiv4-100.dev1.mordach.com
